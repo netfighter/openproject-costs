@@ -28,7 +28,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 %>
 
     <% unless possible_cost_objects.empty? -%>
-      <%= context_menu_entry title: l(:label_cost_object),
+      <%# TODO: replace with solution that works with Angular-based context menu %>
+      <%# context_menu_entry title: l(:label_cost_object),
                              back_url: back,
                              updated_object_ids: issues.collect(&:id),
                              collection: possible_cost_objects,
