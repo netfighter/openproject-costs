@@ -19,7 +19,7 @@
 
 Feature: Permission View Own hourly and cost rates
 
-  @javascript @wip
+  @javascript
   Scenario: Users that by set permission are only allowed to see their own rates, can not see the rates of others.
     Given there is a standard cost control project named "Standard Project"
     And the role "Supplier" may have the following rights:
